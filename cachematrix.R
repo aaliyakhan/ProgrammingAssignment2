@@ -43,8 +43,7 @@ cacheSolve <- function(x, ...) {
 'Assign matrix to x for example as below'
 
 x<- matrix(1:4, nrow=2,ncol=2)
-
 a<-makeCacheMatrix(x)
 cacheSolve(a)
-'running cacheSolve again will get cached data and message will display'
+'Running cacheSolve again will get cached data and message will display'
 cacheSolve(a)
