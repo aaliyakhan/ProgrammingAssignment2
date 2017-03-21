@@ -11,10 +11,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   
-  ## get() function gets the matrix
   get <- function() x 
-  
-  ## setinverse() function is the solve function. It assigns the inverse of the matrix to m
   setinverse <- function(solve) m <<- solve   
   
   ## getinverse() function gets the inverse of x which is now m
@@ -26,9 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## cacheSolve function checks if the inverse has already been calculated. If it has, retrieves 
-## the inverse from the cache.
-## Otherwise cacheSolve calculates the inverse and caches it for later use
+## cacheSolve function checks if the inverse has already been calculated. 
+## If it has, retrieves the inverse from the cache. Otherwise cacheSolve calculates the inverse and caches it for later use
 
 cacheSolve <- function(x, ...) {
   
