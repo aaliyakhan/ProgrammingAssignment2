@@ -38,3 +38,13 @@ cacheSolve <- function(x, ...) {
   x$setinverse(m)
   m
 }
+
+'Run function as follows'
+'Assign matrix to x for example as below'
+
+x<- matrix(1:4, nrow=2,ncol=2)
+
+a<-makeCacheMatrix(x)
+cacheSolve(a)
+'running cacheSolve again will get cached data and message will display'
+cacheSolve(a)
